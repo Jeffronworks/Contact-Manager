@@ -27,11 +27,6 @@ class EditContact extends Component {
     e.preventDefault();
     const { name, phone, email } = this.state;
 
-    const newContact = {
-      name,
-      email,
-      phone
-    };
     if (name === "") {
       this.setState({ errors: { name: "Name is required" } });
       return;
